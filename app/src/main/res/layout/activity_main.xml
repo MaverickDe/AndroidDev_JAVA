@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main"
+
+
+    >
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/average_sans"
+        android:orientation="vertical"
+        android:text="Hello World!"
+        android:textSize="50px"
+        android:textStyle=""
+
+        />
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:onClick="buttonClicked"
+        android:id="@+id/btn"
+        android:layout_below="@id/txtWelcome"
+        android:backgroundTint="@color/black"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input"
+
+        android:lines="2"
+        android:inputType="textVisiblePassword"
+        android:text="123"
+        android:id="@+id/edittext"/>
+
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="true"
+    android:id="@+id/checkbox"
+    android:layout_below="@+id/btn"
+    android:text="no"
+    />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:id="@+id/checkedbox2"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_below="@+id/btn"
+        android:text="hellow"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:id="@+id/radioGroup">
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/radio2"/>
+
+
+
+
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtWelcome"
+
+
+        android:layout_marginBottom="102dp" />
+
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/image"
+
+        />
+    <Spinner
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/spinner"
+        android:entries="@array/students"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
